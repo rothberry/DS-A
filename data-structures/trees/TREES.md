@@ -42,3 +42,7 @@ Rule 1: all child nodes to the right must be greater than the left
 Rule 2: node can only have 2 children
 
 Search and lookup is easy.
+
+Balanced vs UnBalanced BSTs
+
+UnBalanced is mostly a long Linked List with O(n)

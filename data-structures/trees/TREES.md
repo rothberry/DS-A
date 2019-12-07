@@ -46,3 +46,20 @@ Search and lookup is easy.
 Balanced vs UnBalanced BSTs
 
 UnBalanced is mostly a long Linked List with O(n)
+
+## AVL & Red/Black Trees
+
+Both maintain balance on trees
+
+
+## Heaps
+
+Lookup:   O(n)  * Because it's less ordered than a BST
+Insert:   O(log(n))
+Delete:   O(log(n))
+
+Used a lot data storage, sorting algorithms, and priority queues
+
+Trie
+A specialized tree used mostly for searching
+Similar to auto-completion

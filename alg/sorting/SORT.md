@@ -22,3 +22,11 @@ numbers.sort() => [1, 2, 2, 34, 65, 7, 8]
 .sort() is different in different broswers
 
 String.localeCompare() to fix language sorting
+
+
+### Can improve on O(log(n)) with no comparison sorts
+
+Counting Sort
+Radix Sort
+
+Uses the way that the data is stored to sort

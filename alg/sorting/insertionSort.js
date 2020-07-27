@@ -6,7 +6,7 @@
 
 const { performance } = require("perf_hooks")
 
-const insertionSort = array => {
+const insertionSort = (array) => {
   let t0 = performance.now()
 
   for (let i = 0; i < array.length; i++) {
@@ -28,4 +28,6 @@ const insertionSort = array => {
   return array
 }
 const array = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0]
+const array2 = [0, 1, 2, 4, 2, 3, 5, 6, 7, 8, 9, 10]
 console.log(insertionSort(array))
+console.log(insertionSort(array2))

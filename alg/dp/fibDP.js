@@ -12,11 +12,12 @@ const fibonacciRec = (n) => {
   }
 }
 
-
 let calc2 = 0
 const fibonacciDP = () => {
   let cache = {}
 
+  // const fib = (n) => {
+  // let fib = function(n){
   return function fib(n) {
     calc2++
     if (!!cache[n]) {
@@ -32,8 +33,18 @@ const fibonacciDP = () => {
   }
 }
 
-const fasterFib = fibonacciDP()
+const fibonacciDP2 = (n) => {
+  let answer = [0, 1]
+  for (let i = 2; i <= n; i++) {
+    answer.push(answer[i - 2] + answer[i - 1])
+  }
+  return answer.pop()
+}
 
-console.log(`DP:\t${fibonacciRec(35)}\tcalc2:\t${calc}`)
+const fasterFib = fibonacciDP()
+console.log(typeof fasterFib)
+// console.log(`DP:\t${fibonacciRec(35)}\tcalc2:\t${calc}`)
+console.log(`DP:\t${fibonacciDP2(35)}`)
 console.log("\n###########\n")
-console.log(`DP:\t${fasterFib(35)}\tcalc2:\t${calc2}`)
+// console.log(`DP:\t${fasterFib(35)}\tcalc2:\t${calc2}`)
+console.log(`DP:\t${fasterFib(35)}`)

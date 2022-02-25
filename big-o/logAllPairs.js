@@ -2,9 +2,9 @@
 
 const findAllPairs = arr => {
   let counter = 0
-  arr.forEach(x => { // * O(n)
+  arr.forEach(x => { 
     counter++
-    arr.forEach(y => { // * O(n)
+    arr.forEach(y => { 
       counter++
       console.log(counter, x, y)
     })
@@ -12,9 +12,6 @@ const findAllPairs = arr => {
   console.log(counter)
 }
 
-// ! QUADRATIC TIME
-// ! O(n * n) == O(n^2)
-
-
-const boxes = ['a', 'b', 'c', 'd', 'e']
+let boxes = ['a', 'b', 'c', 'd', 'e', 'f']
+// boxes = new Array(100).fill("a")
 findAllPairs(boxes)
